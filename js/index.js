@@ -50,3 +50,17 @@ let navThree = navItems[2].textContent = (siteContent["nav"]["nav-item-3"])
 let navFour = navItems[3].textContent = (siteContent["nav"]["nav-item-4"])
 let navFive = navItems[4].textContent = (siteContent["nav"]["nav-item-5"])
 let navSix = navItems[5].textContent = (siteContent["nav"]["nav-item-6"])
+
+//CTA
+let ctaItems = siteContent["cta"]["h1"].split(' ') 
+let ctaText = document.getElementsByTagName('h1')[0]
+ctaText.innerHTML = ctaItems.join('<br>')
+
+
+let ctaButton = document.getElementsByTagName("button")[0]
+ctaButton.innerText = siteContent["cta"]["button"]
+
+let ctaImage = document.getElementById("cta-img")
+ctaImage.src = siteContent["cta"]["img-src"]
+
+//Main Content
