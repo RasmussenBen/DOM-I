@@ -64,3 +64,22 @@ let ctaImage = document.getElementById("cta-img")
 ctaImage.src = siteContent["cta"]["img-src"]
 
 //Main Content
+let main = document.querySelector(".main-content")
+let contentHeader = main.querySelectorAll("h4")
+contentHeader[0].textContent = siteContent["main-content"]["features-h4"]
+contentHeader[1].textContent = siteContent["main-content"]["about-h4"]
+contentHeader[2].textContent = siteContent["main-content"]["services-h4"]
+contentHeader[3].textContent = siteContent["main-content"]["product-h4"]
+contentHeader[4].textContent = siteContent["main-content"]["vision-h4"]
+
+let bodyText = main.querySelectorAll("p")
+bodyText[0].textContent = siteContent["main-content"]["features-content"]
+bodyText[1].textContent = siteContent["main-content"]["about-content"]
+bodyText[2].textContent = siteContent["main-content"]["services-content"]
+bodyTextt[3].textContent = siteContent["main-content"]["product-content"]
+bodyText[4].textContent = siteContent["main-content"]["vision-content"]
+
+let codeImage = document.getElementById("middle-img")
+codeImage.src = siteContent["main-content"]["middle-img-src"]
+
+//Contact Info
