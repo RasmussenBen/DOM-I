@@ -101,3 +101,11 @@ copyright.textContent = siteContent['footer']['copyright'];
 navItems.forEach(nav => {
   nav.style.color = 'green'
 });
+
+let newNavOne = document.createElement('a');
+newNavOne.textContent = 'Story';
+document.querySelector('nav').appendChild(newNavOne);
+
+let newNavTwo = document.createElement('a');
+newNavTwo.textContent = 'Values';
+document.querySelector('nav').prepend(newNavTwo);
