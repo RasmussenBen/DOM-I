@@ -41,4 +41,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//branch test
+//Selectors
+//Nav
+let navItems = document.querySelectorAll('nav a');
+let navOne = navItems[0].textContent = (siteContent["nav"]["nav-item-1"])
+let navTwo = navItems[1].textContent = (siteContent["nav"]["nav-item-2"])
+let navThree = navItems[2].textContent = (siteContent["nav"]["nav-item-3"])
+let navFour = navItems[3].textContent = (siteContent["nav"]["nav-item-4"])
+let navFive = navItems[4].textContent = (siteContent["nav"]["nav-item-5"])
+let navSix = navItems[5].textContent = (siteContent["nav"]["nav-item-6"])
