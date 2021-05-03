@@ -96,3 +96,8 @@ contactText[2].textContent = siteContent['contact']['email'];
 let footerSection = document.querySelector('footer');
 let copyright = footerSection.querySelector('p');
 copyright.textContent = siteContent['footer']['copyright'];
+
+//README Changes
+navItems.forEach(nav => {
+  nav.style.color = 'green'
+});
