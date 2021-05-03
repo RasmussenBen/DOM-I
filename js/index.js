@@ -38,48 +38,61 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.getElementById('logo-img');
+logo.setAttribute('src', siteContent['nav']['img-src']);
 
 //Selectors
 //Nav
 let navItems = document.querySelectorAll('nav a');
-let navOne = navItems[0].textContent = (siteContent["nav"]["nav-item-1"])
-let navTwo = navItems[1].textContent = (siteContent["nav"]["nav-item-2"])
-let navThree = navItems[2].textContent = (siteContent["nav"]["nav-item-3"])
-let navFour = navItems[3].textContent = (siteContent["nav"]["nav-item-4"])
-let navFive = navItems[4].textContent = (siteContent["nav"]["nav-item-5"])
-let navSix = navItems[5].textContent = (siteContent["nav"]["nav-item-6"])
+let navOne = navItems[0].textContent = (siteContent['nav']['nav-item-1']);
+let navTwo = navItems[1].textContent = (siteContent['nav']['nav-item-2']);
+let navThree = navItems[2].textContent = (siteContent['nav']['nav-item-3']);
+let navFour = navItems[3].textContent = (siteContent['nav']['nav-item-4']);
+let navFive = navItems[4].textContent = (siteContent['nav']['nav-item-5']);
+let navSix = navItems[5].textContent = (siteContent['nav']['nav-item-6']);
 
 //CTA
-let ctaItems = siteContent["cta"]["h1"].split(' ') 
-let ctaText = document.getElementsByTagName('h1')[0]
-ctaText.innerHTML = ctaItems.join('<br>')
+let ctaItems = siteContent['cta']['h1'].split(' ') ;
+let ctaText = document.getElementsByTagName('h1')[0];
+ctaText.innerHTML = ctaItems.join('<br>');
 
 
-let ctaButton = document.getElementsByTagName("button")[0]
-ctaButton.innerText = siteContent["cta"]["button"]
+let ctaButton = document.getElementsByTagName('button')[0];
+ctaButton.innerText = siteContent['cta']['button'];
 
-let ctaImage = document.getElementById("cta-img")
-ctaImage.src = siteContent["cta"]["img-src"]
+let ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent['cta']['img-src'];
 
 //Main Content
-let main = document.querySelector(".main-content")
-let contentHeader = main.querySelectorAll("h4")
-contentHeader[0].textContent = siteContent["main-content"]["features-h4"]
-contentHeader[1].textContent = siteContent["main-content"]["about-h4"]
-contentHeader[2].textContent = siteContent["main-content"]["services-h4"]
-contentHeader[3].textContent = siteContent["main-content"]["product-h4"]
-contentHeader[4].textContent = siteContent["main-content"]["vision-h4"]
+let main = document.querySelector('.main-content');
+let contentHeader = main.querySelectorAll('h4');
+contentHeader[0].textContent = siteContent['main-content']['features-h4'];
+contentHeader[1].textContent = siteContent['main-content']['about-h4'];
+contentHeader[2].textContent = siteContent['main-content']['services-h4'];
+contentHeader[3].textContent = siteContent['main-content']['product-h4'];
+contentHeader[4].textContent = siteContent['main-content']['vision-h4'];
 
-let bodyText = main.querySelectorAll("p")
-bodyText[0].textContent = siteContent["main-content"]["features-content"]
-bodyText[1].textContent = siteContent["main-content"]["about-content"]
-bodyText[2].textContent = siteContent["main-content"]["services-content"]
-bodyTextt[3].textContent = siteContent["main-content"]["product-content"]
-bodyText[4].textContent = siteContent["main-content"]["vision-content"]
+let contentText = main.querySelectorAll('p');
+contentText[0].textContent = siteContent['main-content']['features-content'];
+contentText[1].textContent = siteContent['main-content']['about-content'];
+contentText[2].textContent = siteContent['main-content']['services-content'];
+contentText[3].textContent = siteContent['main-content']['product-content'];
+contentText[4].textContent = siteContent['main-content']['vision-content'];
 
-let codeImage = document.getElementById("middle-img")
-codeImage.src = siteContent["main-content"]["middle-img-src"]
+let codeImage = document.getElementById('middle-img');
+codeImage.src = siteContent['main-content']['middle-img-src'];
 
 //Contact Info
+let contactBody = document.querySelector('.contact');
+let contactHeader = contactBody.querySelector('h4');
+let contactText = contactBody.querySelectorAll('p');
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactText[0].textContent = siteContent['contact']['address'];
+contactText[1].textContent = siteContent['contact']['phone'];
+contactText[2].textContent = siteContent['contact']['email'];
+
+//Footer
+let footerSection = document.querySelector('footer');
+let copyright = footerSection.querySelector('p');
+copyright.textContent = siteContent['footer']['copyright'];
